@@ -27,6 +27,10 @@ nav{
     color: white;
 }
 
+.nav-icon{
+    display: none;
+}
+
 .head , .mid{
     display: flex;
     justify-content: space-between;
@@ -154,3 +158,126 @@ nav{
     text-decoration:underline #a853d7;
     cursor: pointer;
 }
+
+@media only screen and (max-width: 600px) {
+    *{
+        margin: 0px; 
+        padding: 0px;
+        outline: 0px;
+        font-family: "Open Sans";
+        /* border: 0.1px solid pink; */
+    }
+    
+    nav{
+        padding: 2vh;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+
+    .nav-items{
+        display: none;
+    }
+    
+    .logo > img{
+        margin-left: 1vh;
+    }
+    
+
+    .nav-icon{
+        display: block;
+    }
+    
+    .header{
+        background-color: #7030cc;
+        color: white;
+    }
+    
+    .head  {
+        flex-direction: column;
+    }
+
+    .mid{
+        flex-direction: column-reverse;
+    }
+    
+    .bot > h1{
+        margin: 2vh;
+    }
+    
+    .card{
+        margin: 0px 2vh;
+        display: flex;
+        gap: 2vh;
+    }
+    
+    .circle {
+        height: 20vh;
+        width: 20vh;
+        border-radius: 50%;
+        margin: auto;
+    }
+    
+    .circle > img{
+        margin: 5vh;
+        height: 10vh;
+    }
+    
+    .fst{
+        background-color: #faeaeb;
+    }
+    
+    .scd{
+        background-color: #fbf0ee;
+    }
+    
+    .tdh{
+        background-color: #e9f4f6;
+    }
+    
+    .fth{
+        background-color: #f2e7f5;
+    }
+     /* second-phase  */
+    .nav-item{
+        margin-right: 7vh;
+    }
+    
+    
+    .sub-head > h1 {
+        margin-left: 3vh;
+        margin: 1vh 2vh;
+        font-size: 2.8rem;
+    }
+    
+    .sub-head p {
+        margin: 2vh;
+    }
+    
+    .mid{
+        margin:  0px 1vh;
+        margin-top: 2vh;
+    }
+    
+    
+    .inner-mid{
+        margin:  0px 20px;
+        display: flex;
+    }
+
+    .card{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    
+    .cards{
+        height: AUTO;
+        margin-bottom: 10vh;
+        text-align: center;
+        border-radius: 25px;
+        border: none;
+        box-shadow: 2px 2px 2px 2px rgb(153, 152, 152);
+    }
+    
+  }
