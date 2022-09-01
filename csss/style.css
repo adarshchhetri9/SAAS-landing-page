@@ -266,7 +266,7 @@ nav{
     }
 
     .card{
-        display: flex;
+        gap: 1vh;
         flex-direction: column;
     }
     
